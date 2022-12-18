@@ -21,7 +21,6 @@ body {
   grid-template-columns: repeat(3, 3fr);
   place-items: center;
   padding: 15px;
-  background: rgba(247, 247, 247, 0.053);
   border-radius: 5px;
   height: fit-content;
   grid-column-gap: 10px;
