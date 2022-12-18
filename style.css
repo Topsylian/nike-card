@@ -7,7 +7,7 @@
 
 body {
   padding: 2% 8%;
-  background-color: rgba(172, 17, 17, 0.656);
+  background-color: rgba(13, 8, 43);
   color: rgb(255, 244, 234);
   display: flex;
   justify-content: center;
@@ -21,11 +21,7 @@ body {
   grid-template-columns: repeat(3, 3fr);
   place-items: center;
   padding: 15px;
-  background: linear-gradient(
-    300deg,
-    rgba(141, 43, 4, 0.9) 40%,
-    rgb(3, 104, 111) 0%
-  );
+  background: rgba(247, 247, 247, 0.053);
   border-radius: 5px;
   height: fit-content;
   grid-column-gap: 10px;
@@ -56,9 +52,10 @@ h1 {
   border-radius: 5px;
   font-size: 30px;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(17, 128, 132);
   box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0);
-  color: white;
+  color: rgb(255, 255, 255);
+  outline: none;
 }
 
 /* Reset Button */
