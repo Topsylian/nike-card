@@ -11,47 +11,33 @@
   </head>
 
   <body>
-    <div id="main">
-      <h1>TIC TAC TOE</h1>
-
-      <br><br>
-      <!-- 3*3 grid of Boxes -->
-      <div class="board">
-        <input type="text" id="b1" onclick="myfunc_3(); myfunc();" readonly>
-
-        <input type="text" id="b2" onclick="myfunc_4(); myfunc();" readonly>
-
-        <input type="text" id="b3" onclick="myfunc_5(); myfunc();" readonly>
-
-        <input type="text" id="b4" onclick="myfunc_6(); myfunc();" readonly>
-
-        <input type="text" id="b5" onclick="myfunc_7(); myfunc();" readonly>
-
-        <input type="text" id="b6" onclick="myfunc_8(); myfunc();" readonly>
-
-        <input type="text" id="b7" onclick="myfunc_9(); myfunc();" readonly>
-
-        <input type="text" id="b8" onclick="myfunc_10();myfunc();" readonly>
-
-        <input type="text" id="b9" onclick="myfunc_11();myfunc();" readonly>
-
+    <div class="main-box">
+      <h3>Cushion</h3>
+      <div class="container">
+        <a href="javascript:void(0)" class="close-btn" id="close-btn">&times;</a>
+        <div class="nav-link">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Services</a>
+          <a href="#">Product</a>
+        </div>
       </div>
-      <!-- Grid end here  -->
-      <br><br><br>
-      <!-- Button to reset game -->
-      <button id="but" onclick="myfunc_2()">
-        RESET
-      </button>
-
-      <br><br>
-      <!-- Space to show player turn -->
-      <p id="print"></p>
-
-
-
-
+      <div class="harmburger" id="open-btn">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+      </div>
     </div>
-  </body>
+    <div class="con">
+      <div class="logo">Cushion</div>
+      <div class="desktop-nav">
+        <a href="#">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Product</a>
+      </div>
+    </div>
   </body>
 
 </html>
