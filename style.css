@@ -51,7 +51,7 @@ main {
 .sub-boxes > .img-box {
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
 }
 
 .sub-boxes > .img-box > figure {
@@ -254,6 +254,12 @@ button:hover {
   color: black;
 }
 
+@media screen and (max-width: 1024px) {
+  main {
+    padding: 2% 3%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding: 2% 3%;
@@ -276,5 +282,6 @@ button:hover {
 
   .sub-boxes, .sub-boxes-2 {
     width: 100%;
+    height: 750px;
   }
 }
