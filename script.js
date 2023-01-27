@@ -22,11 +22,6 @@ const docFourthColor = fourthColor.style.backgroundColor;
 fifthColor.style.backgroundColor = 'pink';
 const docFifthColor = fifthColor.style.backgroundColor;
 
-btn.addEventListener('click', () => {
-	firstCard.classList.add("active");
-	hero.style.transform = "rotate(2deg)";
-});
-
 firstColor.addEventListener('click', () => {
 	hero.style.transform = "rotate(2deg)";
 	firstCard.style.backgroundColor = docFirstColor;
