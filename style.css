@@ -7,38 +7,249 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(13, 126, 128);
   color: rgb(59, 33, 8);
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
+  font-family: cursive;
 }
 
 main {
   padding: 2% 8%;
-  background-color: rgba(0, 0, 0, 0.749);
   width: 100%;
   position: relative;
   transition: 0.85s ease-in-out;
   font-family: sans-serif;
   display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 1100px;
+}
+
+.sub-boxes {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  background-color: #b4e9a9;
+  border-radius: 15px;
+  width: 550px;
+  background: linear-gradient(150deg, #f39451 , #b4e9a975);
+}
+
+.sub-boxes.active {
+  background: linear-gradient(150deg, #000000 , #eee120);
+}
+
+.sub-boxes > .img-box {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.sub-boxes > .img-box > figure {
+  width: 500px;
+  display: flex;
+}
+
+.sub-boxes > .img-box > figure > img {
+  width: 100%;
+  transform: rotate(-35deg);
+  transition: .85s ease-in-out;
+}
+
+.sub-boxes > .img-box > figure > img:hover {
+  width: 100%;
+  transform: rotate(0deg);
+}
+
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 70px;
+}
+
+.sub-boxes > .details > h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 0px;
+  font-style: normal;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1.7;
+  font-variant: small-caps;
+}
+
+.sub-boxes > .details > h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub-boxes-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #b4e9a975;
+  border-radius: 15px;
+  width: 550px;
+  padding: 30px;
   gap: 25px;
 }
 
-
-.sub-boxes > h1 {
-  font-size: 2.5rem;
-  color: rgb(254, 254, 185);
-  margin-bottom: 25px;
-}
-
-.sub-boxes > p {
+.sub-boxes-2 > p {
   font-size: 1.5rem;
   line-height: 1.8;
   color: rgb(159, 156, 156);
   opacity: 1;
   padding: 0px 55px;
   width: 100%;
-  visibility: hidden;
+  background: red;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.rating > h2 {
+  color: #ffffff;
+}
+
+.sub-boxes-2 .rate > span {
+  color: #e3a322;
+  height: fit-content;
+  transition: .75s ease-in-out;
+  cursor: pointer;
+  font-size: 32px;
+}
+
+.sub-boxes-2 .rate > span:hover {
+  color: #ffffff;
+}
+
+.sub-boxes-2 .rate > span.rate-white {
+  color: #ffffff;
+  height: fit-content;
+}
+
+.nike-airmax {
+  margin-bottom: 30px;
+}
+
+.nike-airmax > h2 {
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+
+.nike-airmax > h3 {
+  color: #e3a322;
+}
+
+.nike-airmax-color > h2, .airmax-size > h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.colors-selection {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.colors-selection > span {
+  padding: 50px;
+  transition: .5s ease-in-out;
+}
+
+.colors-selection > span:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.colors-selection > span.first{
+  background-color: orangered;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.colors-selection > span.second{
+  background-color: purple;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.colors-selection > span.third{
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.colors-selection > span.fourth{
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.colors-selection > span.fifth{
+  background-color: pink;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.add-to-cart {
+  color: white;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.add-to-cart > span{
+  padding: 18px;
+  border: 2px solid ;
+  font-size: 1.35rem;
+  transition: .85s ease-in-out;
+}
+
+.add-to-cart > span:hover {
+  background: linear-gradient(150deg, #f39451 , #b4e9a975);
+  color: black;
+  border: 2px solid transparent;
+}
+
+.plus {
+  border-radius: 0px 20px 20px 0px;
+}
+
+.minus {
+  border-radius: 20px 0px 0px 20px;
+}
+
+button {
+  padding: 1.3rem;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 1.65rem;
+  background-color: #e3a322;
+  outline: none;
+  border: none;
+  transition: .85s ease-in-out;
+  color: white;
+}
+
+button:hover {
+  background: linear-gradient(150deg, #f39451 , #b4e9a975);
+  border-radius: 30px;
+  color: black;
 }
